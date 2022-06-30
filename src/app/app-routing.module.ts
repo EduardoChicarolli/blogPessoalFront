@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-// SE NAO IMPORTAR AUTOMANTICO TEM Q SER MANUAL
+import { Routes, RouterModule } from '@angular/router';
+import { CadastrarComponent } from './cadastrar/cadastrar.component';
+import { EntrarComponent } from './entrar/entrar.component';
+
 
 const routes: Routes = [
 
-  // {path: '', redirectTo: 'entrar', pathMatch: 'full'} //pagina inicial
-  
-  // {path:'caddastrar', component: CadastrarComponent}, //apaga um pouco e ve se aparece para importar
-  // {path:'entrar', component: EntrarComponent};
+  {path: '', redirectTo: 'entrar', pathMatch: 'full'},
+  {path: 'entrar', component: EntrarComponent},
+  {path: 'cadastrar', component: CadastrarComponent},
+
 ];
 
 @NgModule({
